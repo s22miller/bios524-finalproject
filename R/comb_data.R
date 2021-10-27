@@ -1,0 +1,24 @@
+#' Data of top and bottom five covid 19 vaccinated states
+#'
+#' Combined data of covid 19 created from COVID19 R library data set cleaned to show top and bottom five states by vaccine rates
+#'
+#' @format A tibble with 10 rows and 15 variables
+#' \describe{
+#'   \item{id}{chr special id for each state}
+#'   \item{administrative_level_2}{chr US states}
+#'   \item{date}{date October 1st 2021}
+#'   \item{vaccines}{dbl total vaccines doses given}
+#'   \item{icu}{int number of icu admissions on given date}
+#'   \item{hosp}{dbl number of admitted covid patients on given date}
+#'   \item{confirmed}{dbl total number of confirmed covid cases since data started to be collected on given date}
+#'   \item{population}{int total state population}
+#'   \item{deaths}{int total deaths}
+#'   \item{truvac}{dbl total vaccine divided by 2}
+#'   \item{icupop}{dbl icu divided by population}
+#'   \item{vacpop}{dbl truvac divided by population}
+#'   \item{hosppop}{dbl hospital divided by population}
+#'   \item{confpop}{dbl confirmed divided by population}
+#'   \item{deathpop}{dbl deaths divided by population}
+#' }
+#' @source Guidotti, E., Ardia, D., (2020), "COVID-19 Data Hub", Journal of Open Source Software 5(51):2376, doi: 10.21105/joss.02376.
+"comb_data"
