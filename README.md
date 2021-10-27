@@ -1,11 +1,29 @@
 # millerfinalproject
 
 
-Background
+Package Overview:
 
-The goal of the data set is to provide the research community with a unified dataset to hopefully better understand COVID-19. This is implemented as an extendable R package (R Core Team, 2020) aggregated from several sources. Package is covid19 in R. 
+This package is created as the final project for bios524 R section. It is an R package aimed at looking at covid19 data based on US state data specifically vaccination rates comparison of top vs bottom five vaccinated states on certain variables. 
 
-Dataset: COVID-19 Data Hub data set cited by Enanuele Guidotti and David Ardia from University of Neuchatel, Switzerland and HEC Montreal, Canada. This is a daily updated time series of vaccines, testing, cases, deaths, hospitalizations, etc... across governmental sources at the national, regional, and city levels. 
+The library is millerfinalproject
+
+data set - comb_data (described below) used for all functions
+
+Functions:
+sum_data() - summarizes comb_data set. Example use sum_data(comb_data)
+
+stat_data() - statistical analysis using t test. Example use stat_data(comb_data)
+
+regress_data() - regression analysis with visualization of data. Example use regress_data(comb_data)
+
+vis_data() - ggplot bar graph plots of data. Example use vis_data(comb_data)
+
+
+Background:
+
+Dataset:  COVID-19 Data Hub data set cited by Enanuele Guidotti and David Ardia from University of Neuchatel, Switzerland and HEC Montreal, Canada. This is a daily updated time series of vaccines, testing, cases, deaths, hospitalizations, etc... across governmental sources at the national, regional, and city levels. The goal of the data set is to provide the research community with a unified dataset to hopefully better understand COVID-19. This is implemented as an extendable R package (R Core Team, 2020) aggregated from several sources. 
+
+Covid 19 data set information see https://covid19datahub.io. Package is covid19 in R. 
 
  The millerfinalproject library was created to look at the association between vaccination rates of the top five  compared to the bottom five US states. A statistical analysis is performed looking at the impact on confirmed covid-19 cases, hospitalizations, ICU admits and deaths across US states that are top five highest vaccinated states vs the five lowest vaccinated states. 
  
@@ -35,3 +53,6 @@ ICU - this is the total number of covid 19 patients reported to be admitted to a
 Death - this is the total cumulative number of deaths from start of data collection to the date. This is adjusted by state population with the new variable deathpop. 
 
 Confirmed- this is the cumulative number of confirmed cases from data collection to the date. Given this is a total amount this was included in the analysis under the new variable confpop adjusting for state population but because this is an ongoing total number since the start of the date collection this has limitation when trying to factor the impact vaccination has on this number.
+
+References
+Guidotti, E., Ardia, D., (2020), "COVID-19 Data Hub", Journal of Open Source Software 5(51):2376, doi: 10.21105/joss.02376.
